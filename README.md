@@ -1,4 +1,4 @@
-# crevasse/converter [![Build Status](https://travis-ci.org/crevasse/convert.svg?branch=master)](https://travis-ci.org/crevasse/convert) [![Coverage Status](https://coveralls.io/repos/github/crevasse/convert/badge.svg?branch=master)](https://coveralls.io/github/crevasse/convert?branch=master) [![codecov](https://codecov.io/gh/crevasse/convert/branch/master/graph/badge.svg)](https://codecov.io/gh/crevasse/convert)
+# crevasse/converter [![Build Status](https://travis-ci.org/crevasse/converter.svg?branch=master)](https://travis-ci.org/crevasse/converter) [![Coverage Status](https://coveralls.io/repos/github/crevasse/converter/badge.svg?branch=master)](https://coveralls.io/github/crevasse/converter?branch=master) [![codecov](https://codecov.io/gh/crevasse/converter/branch/master/graph/badge.svg)](https://codecov.io/gh/crevasse/converter)
 Simple `hash-json` creation for any project managed via crevasse.
 
 It takes your existing project's `default.conf`.
