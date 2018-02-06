@@ -55,8 +55,7 @@ class Convert extends Command
                 default:
                     Report::setReport('command not found.');
             }
-        }
-        elseif (self::$cli_mode === false) {
+        } elseif (self::$cli_mode === false) {
             switch (true) {
                 case isset($this->command['convert']):
                     $this->getConvertContent($this->command['convert']);
@@ -130,10 +129,10 @@ class Convert extends Command
         for ($i = 0; $i < count($convert_content); $i++) {
             // rules (str_to_lower)
             if (preg_match('/^('.
-            	'DOMAIN-SUFFIX|DOMAIN|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6'.
-            	'),(.*?),('.
-            	'[\x{4e00}-\x{9fa5}\x{1F000}-\x{1F6FF}\x{FE00}-\x{FEFF}\w+\d+\-]+'.
-            	')([\d+\w+\,\-]+|)/u', $convert_content[$i])) {
+                'DOMAIN-SUFFIX|DOMAIN|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6'.
+                '),(.*?),('.
+                '[\x{4e00}-\x{9fa5}\x{1F000}-\x{1F6FF}\x{FE00}-\x{FEFF}\w+\d+\-]+'.
+                ')([\d+\w+\,\-]+|)/u', $convert_content[$i])) {
                 $explode = explode(',', preg_replace('/ \/\/.*/', '', $convert_content[$i]));
                 $this->convert_buffer['rules'][sha1(strtolower($explode[1]))] = [
                     'type'  => $explode[0],
@@ -144,10 +143,10 @@ class Convert extends Command
             }
             // rules (str_to_upper)
             elseif (preg_match('/^('.
-            	'USER-AGENT|PROCESS-NAME|URL-REGEX'.
-            	'),(.*?),('.
-            	'[\x{4e00}-\x{9fa5}\x{1F000}-\x{1F6FF}\x{FE00}-\x{FEFF}\w+\d+\-]+'.
-            	')([\d+\w+\,\-]+|)/u', $convert_content[$i])) {
+                'USER-AGENT|PROCESS-NAME|URL-REGEX'.
+                '),(.*?),('.
+                '[\x{4e00}-\x{9fa5}\x{1F000}-\x{1F6FF}\x{FE00}-\x{FEFF}\w+\d+\-]+'.
+                ')([\d+\w+\,\-]+|)/u', $convert_content[$i])) {
                 $explode = explode(',', preg_replace('/ \/\/.*/', '', $convert_content[$i]));
                 $this->convert_buffer['rules'][sha1(strtolower($explode[1]))] = [
                     'type'  => $explode[0],
@@ -227,8 +226,8 @@ class Convert extends Command
             }
             //geo-ip
             elseif (preg_match('/^(GEOIP),(\w+),('.
-            	'[\x{4e00}-\x{9fa5}\x{1F000}-\x{1F6FF}\x{FE00}-\x{FEFF}\w+\d+\-]+'.
-            	')([\d+\w+\,\-]+|)/u', $convert_content[$i])) {
+                '[\x{4e00}-\x{9fa5}\x{1F000}-\x{1F6FF}\x{FE00}-\x{FEFF}\w+\d+\-]+'.
+                ')([\d+\w+\,\-]+|)/u', $convert_content[$i])) {
                 $explode = explode(',', preg_replace('/ \/\/.*/', '', $convert_content[$i]));
                 $this->convert_buffer['geoip'][sha1(strtolower($explode[1]))] = [
                     'type'  => $explode[0],
@@ -302,8 +301,8 @@ class Convert extends Command
             }
             //final
             elseif (preg_match('/^(FINAL),('.
-            	'[\x{4e00}-\x{9fa5}\x{1F000}-\x{1F6FF}\x{FE00}-\x{FEFF}\w+\d+\-]+'.
-            	')([\d+\w+\,\-]+|)/u', $convert_content[$i])) {
+                '[\x{4e00}-\x{9fa5}\x{1F000}-\x{1F6FF}\x{FE00}-\x{FEFF}\w+\d+\-]+'.
+                ')([\d+\w+\,\-]+|)/u', $convert_content[$i])) {
                 $explode = explode(',', $convert_content[$i]);
                 $this->convert_buffer['final'][sha1(strtolower($explode[1]))] = [
                     'type'  => $explode[0],
