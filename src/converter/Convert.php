@@ -5,7 +5,7 @@ namespace Crevasse;
 class Convert extends Command
 {
     const VERSION = '0.1.0';
-    const VERSION_DATE = '2018-02-06 13:15:04';
+    const VERSION_DATE = '2018-02-06 18:45:39';
     public $convert_content = null;
     public $convert_buffer = [];
     public $convert_result = [];
@@ -46,10 +46,10 @@ class Convert extends Command
                     Report::setReport('convert start...');
                     Report::setReport('convert file path [default.conf] '.
                         'export file path [convert.json]');
-                    $this->getConvertContent(__DIR__.'/'.'default.conf');
+                    $this->getConvertContent('default.conf');
                     $this->getConvertToJson($this->convert_content);
                     $this->setConvertBuild();
-                    $this->outputConvert($this->convert_result, __DIR__.'/'.'convert.json');
+                    $this->outputConvert($this->convert_result, 'convert.json');
                     Report::setReport('convert finish!');
                     break;
                 default:

@@ -22,7 +22,7 @@ class ConvertException extends Exception
                     "Message:[{$data['message']}] Status:[{$data['status']}]") : false;
             if (Command::$cli_mode) {
                 exit(Color::YELLOW.
-                    '[converter CLI] [ConvertException] >> '.
+                    '[Converter CLI] [ConvertException] >> '.
                     '[errorCode:'.$data['status'].'] | '.
                     '[message:'.$data['message'].']'."\r\n".
                     Color::BG_DEFAULT
