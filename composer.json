@@ -1,0 +1,25 @@
+{
+  "name": "crevasse/converter",
+  "description": "Simple hash-json creation for any project managed via crevasse.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "crevasse",
+      "email": "crevasse@injected.me"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "ext-curl": "*",
+    "php-curl-class/php-curl-class": "~7.4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Crevasse\\": "src/converter"
+    }
+  },
+  "bin": ["bin/converter"]
+}
