@@ -10,6 +10,11 @@ class Convert extends Command
     public $convert_buffer = [];
     public $convert_result = [];
 
+    public function __toString()
+    {
+        return (string) $this->convert_result;
+    }
+
     public function __construct()
     {
         $this->detectCommandMode();
