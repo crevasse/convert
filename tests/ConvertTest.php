@@ -1,7 +1,7 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
 use Crevasse\Convert;
+use PHPUnit\Framework\TestCase;
 
 class ConvertTest extends TestCase
 {
