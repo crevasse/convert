@@ -12,7 +12,7 @@ It takes your existing project's `default.conf`.
 * [Usage](#usage)
   * [crevasse](#crevasse)
   * [crevasse install](#install)
-  * [crevasse convert](#convert)
+  * [crevasse convert](#simple-convert)
 * [Install](#install)
   * [As a phar (recommended)](#as-a-phar-recommended)
   * [Updating crevasse](#updating-crevasse)
