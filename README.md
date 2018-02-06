@@ -1,4 +1,4 @@
-# crevasse/convert [![Build Status](https://travis-ci.org/crevasse/convert.svg?branch=master)](https://travis-ci.org/crevasse/convert) [![Coverage Status](https://coveralls.io/repos/github/crevasse/convert/badge.svg?branch=master)](https://coveralls.io/github/crevasse/convert?branch=master) [![codecov](https://codecov.io/gh/crevasse/convert/branch/master/graph/badge.svg)](https://codecov.io/gh/crevasse/convert)
+# crevasse/converter [![Build Status](https://travis-ci.org/crevasse/convert.svg?branch=master)](https://travis-ci.org/crevasse/convert) [![Coverage Status](https://coveralls.io/repos/github/crevasse/convert/badge.svg?branch=master)](https://coveralls.io/github/crevasse/convert?branch=master) [![codecov](https://codecov.io/gh/crevasse/convert/branch/master/graph/badge.svg)](https://codecov.io/gh/crevasse/convert)
 Simple `hash-json` creation for any project managed via crevasse.
 
 It takes your existing project's `default.conf`.
@@ -20,7 +20,7 @@ It takes your existing project's `default.conf`.
 
 ## Usage
 
-Once crevasse/convert is [installed](#install), you can use it via command line like this.
+Once crevasse/converter is [installed](#install), you can use it via command line like this.
 
 ###  simple convert
 
@@ -45,16 +45,16 @@ $ crevasse convert default.conf export convert.json
 ```
 ## Install
 
-You can grab a copy of crevasse/convert in either of the following ways.
+You can grab a copy of crevasse/converter in either of the following ways.
 
 ### As a phar (recommended)
 
 You can simply download a pre-compiled and ready-to-use version as a Phar
 to any directory.
 Simply download the latest `crevasse.phar` file from our
-[releases page](https://github.com/crevasse/convert/releases):
+[releases page](https://github.com/crevasse/converter/releases):
 
-[Latest release](https://github.com/crevasse/convert/releases/latest)
+[Latest release](https://github.com/crevasse/converter/releases/latest)
 
 That's it already. You can now verify everything works by running this:
 
