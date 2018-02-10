@@ -78,7 +78,7 @@ so you have the following options:
    $ sudo mv crevasse.phar /usr/local/bin/crevasse
    ```
  
-If you have installed phar-composer system-wide, you can now verify everything works by running:
+If you have installed crevasse/converter system-wide, you can now verify everything works by running:
 
 ```bash
 $ crevasse -v
