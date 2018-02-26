@@ -251,7 +251,7 @@ class Convert extends Command
                 for ($j = 0; $j < count($explode); $j++) {
                     $this->convert_buffer['mitm']['hostname'][sha1(strtolower($explode[$j]))] = $explode[$j];
                 }
-            } elseif (preg_match('/^(tcp-connection) = .*$/', $convert_content[$i])) {
+            } elseif (preg_match('/^(tcp-connection|skip-server-cert-verify) = .*$/', $convert_content[$i])) {
                 $explode = explode(' = ', $convert_content[$i]);
                 $this->convert_buffer['mitm']['option'][sha1(strtolower($explode[0]))] = [
                     'name' => $explode[0],
